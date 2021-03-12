@@ -1,13 +1,247 @@
 /* Variables */
 :root {
+ --brand-font-color:#533738;
+ --brand-color: #efe6e4;
+ --basic-white:#ffffff;
+ --brown: #8D7370;
+ --light-brown: #E2C4BA;
+ --pink: #CC8B86 ;/* arrows, buttons*/
 
-}
-body{
-    font-family: 'Montserrat', sans-serif;
+ --brand-font:"Montserrat","Arial", sans-serif;
 }
 
-.container{
-    max-width: 1230px;
-    padding: 0px 15px;
+body {
+    font-family: "Montserrat","Arial", sans-serif;
+    width: 100%;
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: var(--brand-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--brand-font-color);
+}
+
+a:hover {
+    outline: 1px solid var(--brand-font-color);
+}
+
+.wrapper {
+    width: 1200px;
     margin: 0 auto;
+}
+
+.wrapper_2 {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: var(--brown);
+}
+
+.wrapper_3 {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: var(--light-brown);
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.main-header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--brand-font-color);
+    padding: 36px 0 0 0;
+    display: flex;
+}
+
+.logo {
+    margin-right: 90px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--brand-font-color);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation-list li {
+    margin-right: 29px;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.intro_inner {
+    padding: 90px 0 168px 83px;
+    max-width: 480px;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--brand-font-color);
+}
+
+.intro_title {
+    font-size: 50px;
+    line-height: 62px;
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.intro_content {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+
+.btn {
+    width: 310px;
+    height: 74px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: var(--pink);
+    color: var(--brand-font-color);
+    border: none;
+}
+
+.about {
+    font-style: normal;
+    font-weight: normal;
+    color: var(--brand-font-color);
+    padding: 65px 82px 21px 82px;
+}
+
+.about_title {
+    font-size: 40px;
+    line-height: 50px;  
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.about_inner {
+    margin-top: 40px;
+    display: flex;
+}
+
+.about_text_box {
+    font-size: 18px;
+    line-height: 30px;
+    min-width: 530px;
+    margin-left: 65px;
+}
+
+.about_text {
+    margin: 0;
+}
+
+.about_text:first-of-type {
+    margin-bottom: 30px;
+}
+
+.advantage {
+    background-color: var(--brown);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+
+}
+
+.advantage_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 87px 0 81px 0;
+}
+
+.advantage_list li:first-of-type {
+    margin-left: 85px;
+}
+
+.advantage_list li:nth-of-type(2) {
+    margin-left: 60px;
+}
+
+.advantage_list li:last-of-type {
+    margin-right: 32px;
+}
+
+.advantage_item {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 6px;
+}
+
+.works {
+    padding-top: 67px;
+    color: var(--brand-font-color);
+}
+
+.works_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.works_flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
+    margin-top: 42px;
+    margin-bottom: 40px;
+}
+
+.works_more {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    display: block;
+    text-align: center;
+}
+.main-footer {
+    min-height: 104px;
+    background-color: var(--brand-color);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--brand-font-color);
+    display: flex;
 }
