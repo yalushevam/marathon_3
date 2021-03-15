@@ -38,7 +38,7 @@
         <h2 class="intro_title">Поможем сделать вашу квартиру уютнее</h2>
         <p class="intro_content">Подбираем текстиль, мебель и аксессуары под&nbsp;ваш&nbsp;интерьер, находим магазины
           и&nbsp;помогаем&nbsp;организовать доставку </p>
-        <button type="button" class="btn">Оставить заявку</button>
+        <a class="btn" href="#form">Оставить заявку</a>
       </div>
     </div>
 
@@ -71,12 +71,44 @@
       <section class="works" id="works">
         <h2 class="works_title">Наши работы</h2>
         <div class="works_flex-box">
-          <img src="./img/first-work.jpg" width="488" height="451" alt="Уютная квартира-студия с двухспальной кроватью">
-          <img src="./img/second-work.jpg" width="692" height="451" alt="Просторная светлая кухня с обеденным столом">
-          <img src="./img/third-work.jpg" width="692" height="451"
-            alt="Комфортная гостиная с креслом цвета хаки, украшенная цветами в горшках">
-          <img src="./img/fourth-work.jpg" width="488" height="451"
-            alt="Аккуратная ванная с полом под гальку и цветком папоротника">
+          <div class="works_container">
+            <img src="./img/first-work.jpg" width="488" height="451"
+              alt="Уютная квартира-студия с двухспальной кроватью">
+            <div class="works_hover">
+              <h3 class="works_subtitle">Квартира-студия <span class="works_m"> 30 кв.м.</span></h3>
+              <p class="works_text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                на&nbsp;отсылках&nbsp;к&nbsp;природе&nbsp;и&nbsp;сделали&nbsp;ребятам уютный интерьер, отсылающий к
+                виллам
+                островов Бали.</p>
+            </div>
+          </div>
+          <div class="works_container">
+            <img src="./img/second-work.jpg" width="692" height="451" alt="Просторная светлая кухня с обеденным столом">
+            <div class="works_hover">
+              <h3 class="works_subtitle">Кухня <span class="works_m">15 кв.м.</span></h3>
+              <p class="works_text">Широкое угловое пространство коттеджа мы&nbsp;оборудовали дополнительным освещением.
+                Светлый стол, стоящий
+                по&nbsp;центру, можно использовать как для готовки, так и&nbsp;в&nbsp;качестве обеденного стола.</p>
+            </div>
+          </div>
+          <div class="works_container">
+            <img src="./img/third-work.jpg" width="692" height="451"
+              alt="Комфортная гостиная с креслом цвета хаки, украшенная цветами в горшках">
+            <div class="works_hover">
+              <h3 class="works_subtitle">Зона отдыха <span class="works_m">12 кв.м.</span></h3>
+              <p class="works_text">В&nbsp;антикафе мы&nbsp;обустроили зоны как можно ближе к&nbsp;домашнему интерьеру.
+                Много подушек, мягких пледов и&nbsp;мелких аксессуаров, создающих комфорт.</p>
+            </div>
+          </div>
+          <div class="works_container">
+            <img src="./img/fourth-work.jpg" width="488" height="451"
+              alt="Аккуратная ванная с полом под гальку и цветком папоротника">
+            <div class="works_hover">
+              <h3 class="works_subtitle">Ванная <span class="works_m">7 кв.м.</span></h3>
+              <p class="works_text">Ванная, в&nbsp;которой пол имитирует морскую гальку и&nbsp;экзотичное растение,
+                заставят вас поверить, что вы&nbsp;в&nbsp;отпуске!</p>
+            </div>
+          </div>
         </div>
         <span class="works_more"><a href="#">Смотреть ещё
             <svg width="67" height="20" viewBox="0 0 67 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,21 +128,28 @@
         </span>
       </section>
     </div>
-    <section class="team wrapper_3" id="team">
+
+    <section class="wrapper_3" id="team">
       <h2 class="team_title">Команда</h2>
-      <img src="./img/team-1.jpg" alt="Наша дизайнерка" width="320" height="253">
-      <p class="team_desctiption">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам
-        домой, общается и помогает сделать вашу квартиру красивой и уютной.</p>
-      <img src="./img/team-2.jpg" alt="Наш Менеджер" width="320" height="253">
-      <p class="team_desctiption">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует
-        вас, соберёт все документы и ответит на все вопросы.</p>
-      <img src="./img/team-3.jpg" alt="Наш дизайнер" width="320" height="253">
-      <p class="team_desctiption">Катя тоже занимается дизайном.
-        Она всегда находит общий язык с клиентами и точно знает, как обсутроить дом так, чтобы вам понравилось.</p>
+      <div class="team_flex">
+        <div class="team_column">
+          <img src="./img/team-1.jpg" alt="Наша дизайнерка" width="320" height="253">
+          <p class="team_description">Это Маша, наш главный дизайнер. Она отвечает&nbsp;за дизайн-проект, приезжает
+            к&nbsp;вам домой, общается и&nbsp;помогает&nbsp;сделать вашу квартиру красивой и&nbsp;уютной.</p>
+        </div>
+        <div class="team_column">
+          <img src="./img/team-2.jpg" alt="Наш Менеджер" width="320" height="253">
+          <p class="team_description">С&nbsp;нашим менеджером Сашей&nbsp;вы познакомитесь в&nbsp;первую очередь. Она
+            проконсультирует вас, соберёт все документы и&nbsp;ответит на&nbsp;все вопросы.</p>
+        </div>
+        <div class="team_column">
+          <img src="./img/team-3.jpg" alt="Наш дизайнер" width="320" height="253">
+          <p class="team_description">Катя тоже занимается дизайном. Она всегда находит общий язык с&nbsp;клиентами
+            и&nbsp;точно знает, как&nbsp;обуcтроить&nbsp;дом так, чтобы вам понравилось.</p>
+        </div>
+      </div>
       <div class="action" id="action">
-        <h2 class="action_title">
-          Как мы работаем
-        </h2>
+        <h2 class="action_title">Как мы работаем</h2>
         <ul class="action_list">
           <li>
             <p class="action_item">Знакомимся, выезжаем
@@ -129,21 +168,22 @@
               расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p>
           </li>
         </ul>
-
       </div>
     </section>
 
     <section class="feedback wrapper" id="feedback">
       <h2 class="feedback_title">Отзывы</h2>
-      <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего
-        дома.
-      </p>
-      <p>Работа шла быстро, было очень приятно общаться и взаимодествовайть
-        с сотрудниками. Не ожидала, что это будет так легко!
+      <blockquote>
+        <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего
+          дома.
+        </p>
+        <p>Работа шла быстро, было очень приятно общаться и взаимодествовайть
+          с сотрудниками. Не ожидала, что это будет так легко!
 
-      </p>
-      <p> Буду советовать и своим друзьям к вам обращаться!»</p>
-      АННА БЕЛОВСКАЯ
+        </p>
+        <p> Буду советовать и своим друзьям к вам обращаться!»</p>
+        <cite>АННА БЕЛОВСКАЯ</cite>
+      </blockquote>
       <img src="" alt="">
       <img src="" alt="">
     </section>

@@ -6,6 +6,7 @@
  --brown: #8D7370;
  --light-brown: #E2C4BA;
  --pink: #CC8B86 ;/* arrows, buttons*/
+ --hover:rgba(100, 72, 69, 0.8);
 
  --brand-font:"Montserrat","Arial", sans-serif;
 }
@@ -119,8 +120,8 @@ a:hover {
 }
 
 .btn {
-    width: 310px;
-    height: 74px;
+    display: inline-block;
+    padding: 25px 65px;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -166,13 +167,11 @@ a:hover {
 }
 
 .advantage {
-    background-color: var(--brown);
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
     text-transform: uppercase;
     color: var(--basic-white);
-
 }
 
 .advantage_list {
@@ -222,9 +221,53 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
-    row-gap: 30px;
+    row-gap: 26px;
     margin-top: 42px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+}
+
+.works_container {
+    position: relative;
+}
+
+.works_hover {
+    position: absolute;
+    color: var(--basic-white);
+    padding: 35px;
+    top: 0;
+    text-align: center;
+    background: var(--hover);
+    background-size: contain;
+    opacity: 0;
+    height: 380px;
+}
+
+.works_hover:hover{
+    opacity: 1;
+}
+
+.works_subtitle {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.works_m {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.works_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    text-align: start;
 }
 
 .works_more {
@@ -234,6 +277,65 @@ a:hover {
     line-height: 37px;
     display: block;
     text-align: center;
+    margin-bottom: 65px;
+}
+
+.team_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--brand-font-color);
+    padding-top: 50px;
+    margin-bottom: 42px;
+}
+
+.team_flex {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.team_column {
+    width: 320px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--brand-font-color);
+}
+
+.team_description {
+    margin: 0;
+}
+
+.action_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 45px;
+    color: var(--brand-font-color);
+}
+
+.action_list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--brand-font-color);
+}
+
+.action_list li {
+    width: 285px;
 }
 .main-footer {
     min-height: 104px;
