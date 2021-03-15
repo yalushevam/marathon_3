@@ -315,7 +315,7 @@ a:hover {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 58px;
     text-transform: uppercase;
     text-align: center;
     margin-left: 45px;
@@ -326,17 +326,89 @@ a:hover {
     list-style: none;
     display: flex;
     justify-content: center;
+    text-align: center;
     gap: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+    padding: 0;
     color: var(--brand-font-color);
+    padding-bottom: 63px;
 }
 
 .action_list li {
     width: 285px;
 }
+
+.action_number {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 67px;
+    border-radius: 50%;
+    background-color: var(--brown);
+    color: var(--basic-white);
+}
+
+.feedback_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: var(--brand-font-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.feedback_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 45px;
+}
+
+.feedback_quote {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--brand-font-color);
+    grid-column: 1/2;
+    margin-left: auto;
+    margin-top: 86px;
+    margin-right: 10px;
+    width: 407px;
+}
+
+.feedback_quote p {
+    margin-bottom: 27px;
+}
+
+.feedback_img {
+    grid-column: 2/3;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.feedback_img img:first-of-type {
+    margin-bottom: 25px;
+}
+
+.slick-prev:before, .slick-next:before {
+    background-color: var(--pink);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 41px;
+    line-height: 63px;
+}
+
 .main-footer {
     min-height: 104px;
     background-color: var(--brand-color);
