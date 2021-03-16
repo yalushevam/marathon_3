@@ -10,7 +10,7 @@
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/slick.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/slick-theme.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -222,31 +222,40 @@
       </div>
     </section>
 
-    <section class="form wrapper_2" id="form">
-      <h2 class="form_title">Оставить заявку</h2>
-      <p class="form_text">Оставьте свои контакты. Менеджер перезвонит
-        в удобное вам время и ответит на все вопросы.</p>
-      <form action="">
+    <section class="wrapper_2" id="form">
+      <div class="form_grid">
+        <div class="form">
+          <h2 class="form_title">Оставить заявку</h2>
+          <p class="form_text">Оставьте свои контакты. Менеджер перезвонит в&nbsp;удобное вам время и ответит на все
+            вопросы.</p>
+          <form action="https://echo.htmlacademy.ru/" method="post">
 
-        <input type="text" name="name" id="your_name" placeholder="Ваше имя" required>
+            <input class="form_input" type="text" name="name" id="your_name" placeholder="Ваше имя"
+              aria-label="Введите имя" required>
 
-        <input type="text" name="phone" id="tel" placeholder="Введите телефон" required>
-      </form>
-      <button class="btn" type="submit">Оставить заявку</button>
-      <img src="./img/map.jpg" alt="map" width="590" height="624"> <iframe src="" frameborder="0"></iframe>
+            <input class="form_input" type="text" name="phone" id="tel" placeholder="Введите телефон"
+              aria-label="Введите телефон" required>
+            <button class="btn" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+        <div class="map"><iframe src="https://www.google.ru/maps/d/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j&hl=ru"
+            width="590" height="624"></iframe>
+        </div>
     </section>
-
+    </div>
   </main>
 
-  <footer class="main-footer">
-    <div class="wrapper">
-      <span>
+
+  <div class="wrapper">
+    <footer class="main-footer">
+      <span class="footer_tel">
         <a href="+7(981)857-46-24">+7 (981) 857-46-24</a>
       </span>
-      <span>г. Санкт-петербург, ул. Большая Конюшенная, 19</span>
-      <span>ИП Королёва А.А</span>
-    </div>
-  </footer>
+      <span class="footer_adress">г. Санкт-петербург, ул. Большая Конюшенная, 19</span>
+      <span class="footer_author">ИП Королёва А.А</span>
+    </footer>
+  </div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/slick.js"></script>
